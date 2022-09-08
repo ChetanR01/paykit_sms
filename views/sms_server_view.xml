@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="prisms_sms_server_view_tree" model="ir.ui.view">
+      <field name="name">prisms_sms.view.tree</field>
+      <field name="model">prisms_sms.server</field>
+      <field name="arch" type="xml">
+        <tree string="sms Server">
+          <field name="name"></field>
+          <field name="authkey"></field>
+          <field name="sender"></field>
+        </tree>
+      </field>
+    </record>
+
+    <record id="prisms_sms_server_view_form" model="ir.ui.view">
+      <field name="name">prisms_sms_server.view.form</field>
+      <field name="model">prisms_sms.server</field>
+      <field name="arch" type="xml">
+        <form string="sms Server">
+          <sheet>
+            <group>
+              <field name="name"></field>
+              <field name="authkey"></field>
+              <field name="sender"></field>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+
+    <record id="prisms_sms_server_action" model="ir.actions.act_window">
+    <field name="name">Prisms sms Server</field>
+    <field name="res_model">prisms_sms.server</field>
+    <field name="view_mode">tree,form</field>
+    <field name="domain">[]</field>
+    <field name="context">{}</field>
+    <field name="help" type="html">
+      <P>
+                Add New sms Server
+      </P>
+    </field>
+  </record>
+
+    <menuitem
+        id="prisms_sms_menu"
+        name="Prisms SMS"
+        parent="base.menu_custom"
+        />
+
+    <menuitem
+      id="prisms_sms_server_menu"
+      name="Prisms sms Server"
+      action="prisms_sms_server_action"
+      parent="prisms_sms_menu"
+      sequence="10"/>
+        <!-- groups="" -->
+      
+      
+
+</odoo>

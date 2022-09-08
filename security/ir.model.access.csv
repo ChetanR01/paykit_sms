@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+
+prisms_sms.access_prisms_sms_template,access_prisms_sms_template,prisms_sms.model_prisms_sms_template,base.group_user,1,1,1,1
