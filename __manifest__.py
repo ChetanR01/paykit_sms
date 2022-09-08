@@ -2,7 +2,9 @@
     'name': 'Prisms SMS Gateway',
     'version' : "1.0",
     'author' : "Prisms",
-    'summary': "",
+    'website':'https://prisms.in',
+    'summary': "Prisms sms module",
+    'category':'Marketing',
     'description': "SMS Gateway",
     'depends' : ['base'],
     'data': [
@@ -17,7 +19,7 @@
         ],
     },
     'price': 50,
-    'currency': 'USD'
+    'currency': 'USD',
     'installable': True,
     'application' : True,
     'license': 'LGPL-3',
